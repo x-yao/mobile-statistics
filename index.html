@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/output.css">
+    <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script>
+    	function init(str){
+			str = str || "";
+			var a = str.split("");
+			if(a.length<4){
+				var result = [];
+				_.each(a,function(value,index){
+					var b = "<p>"+value+"</p>";
+					result.push(b);
+				})
+			}
+			return result && result.join("") || str
+		}
+		var b = init("1");
+		console.log(b)
+    </script>
+</head>
+<body>
+	<header>面试安排</header>
+	<section class="interv_detail">
+		<header>面试信息</header>
+		<div class="section_contain">
+		<section class="interv"><span class="title"><p>面</p><p>试</p><p>主</p><p>题</p></span><span class="maohao">:</span><pre class="word">2015年校园招聘移动端UI设计师岗位初面</pre></section>
+		<section class="interv"><span class="title"><p>面</p><p>试</p><p>地</p><p>点</p></span><span class="maohao">:</span><pre class="word">会议室14</pre></section>
+		<section class="interv"><span class="title">面试评价表</span><span class="maohao">:</span><pre class="word">2014/12/24</pre></section>
+		<section class="interv"><span class="title"><p>面</p><p>试</p><p>官</p></span><span class="maohao">:</span><pre class="word">张哈哈</pre></section></div>
+	</section>
+	<section class="interviewer_detail">
+		<header>应聘者信息</header>
+		<div class="section_contain">
+			<a href="www.baidu.com">
+				<section class="interviewer border_1px_bottom pt10">
+					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
+					</div>
+					<div class="yingpin">
+						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
+					</div>
+					<div class="arrL"></div>
+				</section>
+			</a>
+			<a href="www.baidu.com">
+				<section class="interviewer border_1px_bottom pt10">
+					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
+					</div>
+					<div class="yingpin">
+						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
+					</div>
+					<div class="arrL"></div>
+				</section>
+			</a>
+			<a href="www.baidu.com">
+				<section class="interviewer border_1px_bottom pt10">
+					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
+					</div>
+					<div class="yingpin">
+						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
+					</div>
+					<div class="arrL"></div>
+				</section>
+			</a>
+			<a href="www.baidu.com">
+				<section class="interviewer border_1px_bottom pt10">
+					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
+					</div>
+					<div class="yingpin">
+						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
+					</div>
+					<div class="arrL"></div>
+				</section>
+			</a>
+			</div>
+	</section>
+	</body>
+</html>
