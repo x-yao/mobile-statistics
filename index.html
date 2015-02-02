@@ -5,79 +5,179 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/output.css">
-    <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+    <script src="js/zepto.min.js"></script>
     <script src="js/underscore-min.js"></script>
-    <script>
-    	function init(str){
-			str = str || "";
-			var a = str.split("");
-			if(a.length<4){
-				var result = [];
-				_.each(a,function(value,index){
-					var b = "<p>"+value+"</p>";
-					result.push(b);
-				})
-			}
-			return result && result.join("") || str
-		}
-		var b = init("1");
-		console.log(b)
-    </script>
+    <script src="js/main.js"></script>
 </head>
-<body>
-	<header>面试安排</header>
-	<section class="interv_detail">
-		<header>面试信息</header>
-		<div class="section_contain">
-		<section class="interv"><span class="title"><p>面</p><p>试</p><p>主</p><p>题</p></span><span class="maohao">:</span><pre class="word">2015年校园招聘移动端UI设计师岗位初面</pre></section>
-		<section class="interv"><span class="title"><p>面</p><p>试</p><p>地</p><p>点</p></span><span class="maohao">:</span><pre class="word">会议室14</pre></section>
-		<section class="interv"><span class="title">面试评价表</span><span class="maohao">:</span><pre class="word">2014/12/24</pre></section>
-		<section class="interv"><span class="title"><p>面</p><p>试</p><p>官</p></span><span class="maohao">:</span><pre class="word">张哈哈</pre></section></div>
+<body class="black">
+	<section class="panal hidden2">
+		<header class="border_1px_bottom">
+			<div class="sculpture"></div>
+			<div class="name">哈哈哈哈</div>
+		</header>
+		<ul>
+			<a href="http://www.baidu.com"><li class="border_1px_bottom">
+				<i class="iconfont home"></i>
+				<span>首页</span>
+			</li></a>
+			<a href="#"><li class="border_1px_bottom">
+				<i class="iconfont school"></i>
+				<span>校园招聘</span>
+			</li></a>
+			<a href="#"><li class="border_1px_bottom">
+				<i class="iconfont social"></i>
+				<span>社会招聘</span>
+			</li></a>
+			<a href="#"><li class="border_1px_bottom">
+				<i class="iconfont shixisheng"></i>
+				<span>实习生招聘</span>
+			</li></a>
+			<a href="#"><li class="border_1px_bottom">
+				<i class="iconfont company"></i>
+				<span>公司简介</span>
+			</li></a>
+			<a href="#"><li class="border_1px_bottom">
+				<i class="iconfont setting"></i>
+				<span>设置</span>
+			</li></a>
+		</ul>
 	</section>
-	<section class="interviewer_detail">
-		<header>应聘者信息</header>
-		<div class="section_contain">
-			<a href="www.baidu.com">
-				<section class="interviewer border_1px_bottom pt10">
-					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
-					</div>
-					<div class="yingpin">
-						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
-					</div>
-					<div class="arrL"></div>
+	<div class="contain">
+	<header>
+			<a href="#" class="b_caidan"><span class="fl iconfont fwb caidan"></span></a>
+			所有职位
+			<a href="#" class="b_arrD"><span class="fr iconfont lh44 arrD"></span></a>
+	</header>
+	<section class="list">
+		<div class="list_contain current">
+			<a href="/detail.html">
+				<section class="list_item">
+					<header>产品经理</header>
+					<nav>
+						<div>北京市</div>
+						<div>研发部</div>
+						<div>校园招聘校园招聘校园招聘校园招聘校园招聘校园招聘</div>
+					</nav>
+					<article><span>岗位描述：</span><span>产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交互设计，撰写详细的产品设产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交互设计，撰写详细的产品设</span>article>
+				</section>
+				<div class="xuxian"></div>
+			</a>
+		</div>
+		<div class="list_contain current">
+			<a>
+				<section class="list_item">
+					<header>产品经理</header>
+					<nav>
+						<div>北京市</div>
+						<div>研发部</div>
+						<div>校园招聘校园招聘校园招聘校园招聘校园招聘校园招聘</div>
+					</nav>
+					<article><span>岗位描述：</span><span>产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交...互设计，撰写详123412细的产品设产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交互设计，撰写详细的产品设</span></article>
+				</section>
+				<div class="xuxian"></div>
+			</a>
+		</div>
+		<div class="list_contain current">
+			<a href="#">
+				<section class="list_item">
+					<header>产品经理</header>
+					<nav>
+						<div>北京市</div>
+						<div>研发部</div>
+						<div>校园招聘校园招聘校园招聘校园招聘校园招聘校园招聘</div>
+					</nav>
+					<article><span>岗位描述：</span><span>产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交互设计，撰写详细的产品1111111111设</span></article>
+				</section>
+				<div class="xuxian"></div>
+			</a>
+		</div>
+		<div class="list_contain current">
+			<a href="#">
+				<section class="list_item">
+					<header>产品经理</header>
+					<nav>
+						<div>北京市</div>
+						<div>研发部</div>
+						<div>校园招聘校园招聘校园招聘校园招聘校园招聘校园招聘</div>
+					</nav>
+					<article><span>岗位描述：</span><span>产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交互设计，撰写详细的产品设</span></article>
+				</section>
+				<div class="xuxian"></div>
+			</a>
+		</div>
+		<div class="list_contain current">
+			<a href="#">
+				<section class="list_item">
+					<header>产品经理</header>
+					<nav>
+						<div>北京市</div>
+						<div>研发部</div>
+						<div>校园招聘校园招聘校园招聘校园招聘校园招聘校园招聘</div>
+					</nav>
+					<article><span>岗位描述：</span><span>产品需求调研，提出产品需求方案，责产品的内容规划，功能设计和交互设计，撰写详细的产品设</span></article>
+				</section>
+				<div class="xuxian"></div>
+			</a>
+		</div>
+		<div class="list_contain current more">
+			<a href="#">
+				<section>
+					点击加载更多
 				</section>
 			</a>
-			<a href="www.baidu.com">
-				<section class="interviewer border_1px_bottom pt10">
-					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
-					</div>
-					<div class="yingpin">
-						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
-					</div>
-					<div class="arrL"></div>
-				</section>
-			</a>
-			<a href="www.baidu.com">
-				<section class="interviewer border_1px_bottom pt10">
-					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
-					</div>
-					<div class="yingpin">
-						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
-					</div>
-					<div class="arrL"></div>
-				</section>
-			</a>
-			<a href="www.baidu.com">
-				<section class="interviewer border_1px_bottom pt10">
-					<div class="title">张君宝<span class="sex">男</span><span class="border_1px_left">25岁</span><span class="border_1px_left">本科</span>
-					</div>
-					<div class="yingpin">
-						<span class="title"><p>应</p><p>聘</p><p>职</p><p>位</p></span><span class="maohao">:</span><span class="word">123</span>
-					</div>
-					<div class="arrL"></div>
-				</section>
-			</a>
+		</div>
+		<section class="search_contain current">
+    	<div class="search_input">
+    		<div class="input_title">工作地点</div>
+    		<div class="input_btn">
+    			<span class="select_val">请选择工作地点</span>
+    			<span class="arrd iconfont">I</span>
+	    		<select class="select_contain">
+				  <option value ="volvo">Volvo</option>
+				  <option value ="saab">Saab</option>
+				  <option value="opel">Opel</option>
+				  <option value="audi">Audi</option>
+				</select>
 			</div>
+    	</div>
+    	<div class="search_input">
+    		<div class="input_title">工作地点</div>
+    		<div class="input_btn">
+    			<span class="select_val">请选择工作地点</span>
+    			<span class="arrd iconfont">I</span>
+	    		<select class="select_contain">
+				  <option value ="volvo">Volvo</option>
+				  <option value ="saab">Saab</option>
+				  <option value="opel">Opel</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</div>
+    	</div>
+    	<div class="search_input">
+    		<div class="input_title">工作地点</div>
+    		<div class="input_btn">
+    			<span class="select_val">请选择工作地点</span>
+    			<span class="arrd iconfont">I</span>
+	    		<select class="select_contain">
+				  <option value ="volvo">Volvo</option>
+				  <option value ="saab">Saab</option>
+				  <option value="opel">Opel</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</div>
+    	</div>
+    	<div class="search_input">
+    		<div class="input_title">关键字</div>
+    		<div class="input_text">
+    			<span class="ico_search_select iconfont">S</span>
+	    		<input type="text" class="ico_search_input" placeholder="查找相关职位">			
+	    	</div>
+    	</div>
+    	<div class="search_input">
+    		<a href="#" class="search_sub">搜索</a>	    	
+    	</div>
+    </section>
 	</section>
+	</div>
 	</body>
 </html>

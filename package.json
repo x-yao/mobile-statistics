@@ -4,13 +4,13 @@
 	"name": "lbt-csslabs",
 	"version": "0.0.0",
 	"dependencies": {
-		"autoprefixer-core": "~4.0.1",
-		"postcss":           "~3.0.4",
+		"autoprefixer-core": "~5.0.0",
+		"postcss":           "~4.0.1",
 		"grunt": "~0.4.1",
 		"grunt-contrib-watch": "~0.5.3"
 	},
 	"devDependencies": {
 		"load-grunt-tasks": "~0.2.1",
-		"grunt-postcss":"~0.2.0"
+		"grunt-postcss":"~0.3.0"
 	}
 }
