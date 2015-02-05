@@ -886,7 +886,60 @@ body.black{
     border-radius: 50%;
     z-index: 100;
 }
+.popup{
+    /*display: none;*/
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    background: rgba(0,0,0,.6);
+    color: #FFF;
+    z-index: 999;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+}
+.a_pop{
+    -webkit-animation:pop .4s ease;
+            animation:pop .4s ease; 
+    -webkit-animation-fill-mode:forwards; 
+            animation-fill-mode:forwards;
+}
+@-webkit-keyframes pop{
+    0%{
+        display: block;
+        opacity: 0;
+        -webkit-transform: scale(.4);
+                transform: scale(.4);
+    }
+    99%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    100%{
+        display: none;
+    }
+}
+@keyframes pop {
+    0%{
+        display: block;
+        opacity: 0;
+        -webkit-transform:scale(.4);
+                transform:scale(.4);
+    }
+    99%{
+        opacity: 1;
+        -webkit-transform:scale(1);
+                transform:scale(1);
 
+    }
+    100% {
+        display: none;
+    }
+}
 
 
 

@@ -193,7 +193,15 @@ $(document).ready(function() {
 		$(this).parent().find("input").val("");
 		$('.loginput input').trigger("input");
 	})
-
+	function popup(str){
+		var tep = "<div class='popup a_pop'>"+str+"</div>";
+		// $(tep).appendTo("body");
+		var pop = $(tep).appendTo("body");
+		setTimeout(function(){
+			pop.remove();
+		},1200)
+	}
+	popup("dddd");
 });
 
 
