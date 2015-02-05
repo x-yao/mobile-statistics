@@ -76,8 +76,16 @@ input:focus {
 @font-face {font-family: 'iconfont';
     src:url('../fonts/beiseniconfont.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
+@font-face {font-family: 'iconfont2';
+    src:url('../fonts/ring.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
 .iconfont{
     font-family:"iconfont";
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+}
+.iconfont2{
+    font-family:"iconfont2";
     font-style:normal;
     -webkit-font-smoothing: antialiased;
 }
@@ -682,6 +690,203 @@ body.black{
     width: 0%;
     font-size: 25px;
 }
+
+
+.pr15{
+    padding-right: 15px;
+}
+.pl15{
+    padding-left: 15px;
+}
+.login{
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    z-index: 200;
+    -webkit-user-select: none;
+}
+.login > header{
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    background: #2b2b2b;
+    border-bottom:1px solid #40a988;
+}
+.login > header a{
+    color: #FFF;
+    font-size: 15px;
+    padding: 2px;
+
+}
+.login > header a:active{
+    color: #40a988;
+}
+.login .login_contain{
+    position: absolute;
+    top: 1px;
+    bottom: 0px;
+    overflow-y: auto;
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 20px;
+    background: #e7e7e7;
+}
+.login .login_contain .loginput{
+    position: relative;
+    text-align: left;
+    margin: 10px 0;
+    height: 50px;
+    -webkit-transition:opacity .3s ease-in-out;
+            transition:opacity .3s ease-in-out;
+}
+.login .login_contain .loginIn{
+    position: relative;
+    background: #40a988;
+    color: #FFF;
+    padding: 15px 50px;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    -webkit-transition:-webkit-transform .3s ease-in-out;
+            transition:transform .3s ease-in-out;
+}
+.login .login_contain .denglu{
+    -webkit-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+            transform:translateY(-50px);
+}
+.login .login_contain .loginput input{
+    border:none;
+    border-bottom:1px solid #CCC;
+    width: 80%;
+    height: 45px;
+    /*line-height: 20px;*/
+    padding: 0px 10px;
+    display: block;
+    margin: 0 auto;
+    /*box-shadow: 0 1px 0 #CCC;*/
+    font-size: 16px;
+    border-radius: 0;
+    /*box-sizing: border-box;*/
+}
+.login .login_contain .loginput .title.focus{
+    opacity: 1;
+    color:#40a988;
+}
+.login .login_contain .loginput .err_place.error{
+    opacity: 1;
+    color:#F00;
+}
+.login .login_contain .loginput p{
+    opacity: 0;
+    padding-left: 10%;
+    font-size: 12px;
+    margin-bottom: -15px;
+    -webkit-transition:all .3s ease-in-out;
+            transition:all .3s ease-in-out;
+}
+.login .login_contain .loginput p.err_place{
+    /*opacity: 0;*/
+    float: right;
+    padding-right: 10%;
+    position: relative;
+    top: -12px;
+}
+.a_login_ok{
+    -webkit-animation:login_ok .4s ease;
+            animation:login_ok .4s ease; 
+    -webkit-animation-fill-mode:forwards; 
+            animation-fill-mode:forwards;
+}
+.a_login_or{
+    -webkit-animation:login_or .4s ease;
+            animation:login_or .4s ease; 
+    -webkit-animation-fill-mode:forwards; 
+            animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes login_ok{
+    0%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    99%{
+        opacity: 0;
+        -webkit-transform: scale(.6);
+                transform: scale(.6);
+    }
+    100%{
+        display: none;
+    }
+}
+
+@keyframes login_ok {
+    0%{
+        opacity: 1;
+        -webkit-transform:scale(1);
+                transform:scale(1);
+    }
+    99%{
+        opacity: 0;
+        -webkit-transform:scale(.6);
+                transform:scale(.6);
+
+    }
+    100% {
+        display: none;
+    }
+}
+@-webkit-keyframes login_or{
+    0%{
+        opacity: 0.3;
+        display: block;
+        -webkit-transform: scale(.6);
+                transform: scale(.6);
+    }
+    100%{
+        display: block;
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes login_or {
+    0%{
+        opacity: 0.3;
+        display: block;
+        -webkit-transform:scale(.6);
+                transform:scale(.6);
+    }
+    100% {
+        display: block;
+        opacity: 1;
+        -webkit-transform:scale(1);
+                transform:scale(1);
+    }
+}
+.del_word{
+    position: absolute;
+    right: 10%;
+    top: 12px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #CCC;
+    color: #FFF;
+    border-radius: 50%;
+    z-index: 100;
+}
+
 
 
 

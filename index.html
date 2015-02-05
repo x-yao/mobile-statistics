@@ -10,7 +10,7 @@
     <script src="js/main.js"></script>
 </head>
 <body class="black">
-	<section class="panal hidden2">
+	<section class="panal hidden2" class="">
 		<header class="border_1px_bottom">
 			<div class="sculpture"></div>
 			<div class="name">哈哈哈哈</div>
@@ -42,7 +42,7 @@
 			</li></a>
 		</ul>
 	</section>
-	<div class="contain">
+	<div class="contain ">
 	<header>
 			<a href="#" class="b_caidan"><span class="fl iconfont fwb caidan"></span></a>
 			所有职位
@@ -121,7 +121,7 @@
 		</div>
 		<div class="list_contain current more">
 			<a href="#">
-				<section>
+				<section class="iconfont2">
 					点击加载更多
 				</section>
 			</a>
@@ -179,5 +179,20 @@
     </section>
 	</section>
 	</div>
+	<section class="login hidden">
+		<header>
+			<a href="#" class="quxiao"><span class="fl pl15">取消</span></a>
+			<span class="title">登录</span>
+			<a href="#" class="t_zhuce loginStatus"><span class="fr pr15">注册</span></a>
+		</header>
+		<section class="login_contain">
+			<div class="email loginput"><div class="del_word iconfont">X</div><p class="title">邮箱</p><p class="err_place"></p><input id="email" data-vald="email require" type="email" placeholder="请输入邮箱"></div>
+			<div class="password loginput"><div class="del_word iconfont">X</div><p class="title">密码</p><p class="err_place"></p><input data-vald="require" id="password" type="password" placeholder="请输入密码"></div>
+			<div class="password2 loginput hidden2"><div class="del_word iconfont">X</div><p class="title">确认密码</p><p class="err_place"></p><input id="password2" disabled="disabled" data-vald="require password2" type="password" placeholder="确认密码"></div>
+			<div class="loginIn denglu"><span class="iconfont2">登录</span><div class="loading ">
+
+			</div></div>
+		</section>
+	</section>
 	</body>
 </html>
