@@ -175,13 +175,20 @@ body.black{
     border-radius: 50%;
 }
 .panal header .name{
+    display: flex;
+    flex-direction:column;
+    align-items:left;
+    padding-top: 15px;
+    height: 75px;
+    justify-content: center;
+}
+.panal header .name p{
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    line-height: 75px;
-    height: 75px;
     width: 85px;
-    padding-top: 15px;
+    padding: 5px;
+    /*padding-top: 15px;*/
 }
 .white .panal header .name{
     color:#343434;
