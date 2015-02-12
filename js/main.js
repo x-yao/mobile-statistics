@@ -78,6 +78,23 @@ $(document).ready(function() {
 		return status;
 		
 	}
+	function valid(data,fn){
+		var foo = {
+			email : function(){
+				var emailReg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+				var result = emailReg.test(data);
+				return result
+			},
+			require :function(){
+				return data == "" ? false : true
+			},
+			password2 : function(){
+				var result = $("#password2").val() == $("#password").val() ? true :false;
+				return result
+			}
+		}
+		return foo[fn]();
+	};
 	$('.loginStatus').on('tap',function(){
 		if ($(".loginIn").find(".iconfont2").hasClass("ring")) {
 			return false
@@ -98,23 +115,7 @@ $(document).ready(function() {
 		};
 		
 	});
-	function valid(data,fn){
-		var foo = {
-			email : function(){
-				var emailReg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-				var result = emailReg.test(data);
-				return result
-			},
-			require :function(){
-				return data == "" ? false : true
-			},
-			password2 : function(){
-				var result = $("#password2").val() == $("#password").val() ? true :false;
-				return result
-			}
-		}
-		return foo[fn]();
-	};
+	
 	$(".more").on("tap",function(){
 		if ($(this).find(".iconfont2").hasClass("ring")) {
 			return false
@@ -193,15 +194,29 @@ $(document).ready(function() {
 		$(this).parent().find("input").val("");
 		$('.loginput input').trigger("input");
 	})
-	function popup(str){
-		var tep = "<div class='popup a_pop'>"+str+"</div>";
+	function popup(str,time,isClick,dom){
+		if (dom == true) {
+			var tep = str;
+		}else{
+			var tep = "<div class='popup a_pop'>"+str+"</div>";
+		};
 		// $(tep).appendTo("body");
 		var pop = $(tep).appendTo("body");
-		setTimeout(function(){
-			pop.remove();
-		},1200)
+		if (typeof time == "number" && isClick == false) {
+			setTimeout(function(){
+				pop.remove();
+			},time);
+		};
+		if (isClick == true) {
+			$("body .popup").on("touchend",function(e){
+				e.preventDefault();
+				pop.remove();
+			})
+		}
 	}
-	popup("dddd");
+	// popup("dddd",1200,true);
+	popup("<div class='popup a_pop full'>123</div>",1200,true,true);
+
 });
 
 
