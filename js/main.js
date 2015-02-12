@@ -195,6 +195,9 @@ $(document).ready(function() {
 		$('.loginput input').trigger("input");
 	})
 	function popup(str,time,isClick,dom){
+		time = time || 1200;
+		isClick = isClick || false;
+		dom = dom || false;
 		if (dom == true) {
 			var tep = str;
 		}else{
